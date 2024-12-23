@@ -6,13 +6,12 @@
     <title>Welcome to My Website</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f4f4f9;
-            color: #333;
+            body {
+    background-image: url('black.jpg');
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center center; /* Centers the image */
+    color: #ffffff;
         }
 
         header {
@@ -32,7 +31,7 @@
         }
 
         nav a {
-            color: #fff;
+            color: #ffffff;
             margin: 0 1rem;
             text-decoration: none;
             font-size: 1.2rem;
@@ -75,6 +74,26 @@
         footer p {
             margin: 0;
         }
+
+        @media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+        margin: 0 0.5rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -87,24 +106,27 @@
         </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm Thomas! I'm a theoretical physics student passionate about exploring the mysteries of the universe. Welcome to my personal corner of the web!</p>
-    </section>
+        <section id="about" style="display: flex; align-items: center; justify-content: center; gap: 2rem; padding: 2rem;">
+            <img src="thomas.jpeg" alt="Thomas Brosnan" style="width: 200px; height: auto; border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <div>
+                <h2>About Me</h2>
+                <p>Hi, I'm Thomas! I'm a theoretical physics student! </p>
+            </div>
+        </section>
 
     <section id="projects">
         <h2>My Projects</h2>
-        <p>Here, you'll find some of the exciting projects I've been working on. Stay tuned as I keep updating this space!</p>
+        <p>Here, you'll find some of the exciting projects I've been working on.</p>
         <a href="#" class="btn">View Projects</a>
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>I'd love to hear from you! Feel free to reach out via <a href="mailto:your.email@example.com">email</a> or connect with me on <a href="#">LinkedIn</a>.</p>
+        <p>Feel free to reach out via email: <a href="mailto:tbrosnan@tcd.ie">tbrosnan@tcd.ie</a> </p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Thomas | All Rights Reserved</p>
+        <p>&copy; 2024 Thomas | Rights to absolutly nothing</p>
     </footer>
 </body>
 </html>
