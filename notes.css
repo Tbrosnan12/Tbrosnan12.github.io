@@ -88,6 +88,34 @@ footer p {
     margin: 0;
 }
 
+#notes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap; /* Ensure it wraps nicely on smaller screens */
+}
+
+#notes img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#notes div {
+    max-width: 500px; /* Limit the width of the text */
+    text-align: left; /* Ensure natural reading flow */
+    padding: 1rem;
+    line-height: 1.6; /* Improve readability */
+}
+.container {
+    max-width: 1200px; /* Set the maximum width of the page */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 1rem; /* Add horizontal padding for smaller screens */
+}
+
 @media (max-width: 768px) {
     body {
         font-size: 1rem;
@@ -104,5 +132,14 @@ footer p {
 
     section {
         padding: 1rem;
+    }
+
+    #about {
+        flex-direction: column; /* Stack content on smaller screens */
+        text-align: center; /* Center align for better mobile aesthetics */
+    }
+
+    #about div {
+        padding: 1rem 0;
     }
 }

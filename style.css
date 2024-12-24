@@ -6,70 +6,93 @@ body {
     color: #ffffff;
     padding-bottom: 50px; /* Adjust for footer height */
     min-height: 100vh; /* Ensures content extends to at least the height of the viewport */
-        }
+}
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
 
-        nav {
-            margin-top: 1rem;
-        }
+nav {
+    margin-top: 1rem;
+}
 
-        nav a {
-            color: #ffffff;
-            margin: 0 1rem;
-            text-decoration: none;
-            font-size: 1.2rem;
-        }
+nav a {
+    color: #ffffff;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
 
-        section {
-            padding: 2rem;
-            text-align: center;
-        }
+section {
+    padding: 2rem;
+    text-align: center;
+}
 
-        section h2 {
-            margin-top: 0;
-        }
+section h2 {
+    margin-top: 0;
+}
 
-        .btn {
-            display: inline-block;
-            margin-top: 1rem;
-            padding: 0.8rem 1.5rem;
-            font-size: 1rem;
-            color: #fff;
-            background-color: #007BFF;
-            text-decoration: none;
-            border-radius: 5px;
-        }
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
-        .btn:hover {
-            background-color: #0056b3;
-        }
+.btn:hover {
+    background-color: #0056b3;
+}
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
-        footer p {
-            margin: 0;
-        }
+footer p {
+    margin: 0;
+}
 
-        @media (max-width: 768px) {
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap; /* Ensure it wraps nicely on smaller screens */
+}
+
+#about img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about div {
+    max-width: 600px; /* Limit the width of the text */
+    text-align: left; /* Ensure natural reading flow */
+    padding: 1rem;
+    line-height: 1.6; /* Improve readability */
+}
+
+@media (max-width: 768px) {
     body {
         font-size: 1rem;
     }
@@ -85,5 +108,14 @@ body {
 
     section {
         padding: 1rem;
+    }
+
+    #about {
+        flex-direction: column; /* Stack content on smaller screens */
+        text-align: center; /* Center align for better mobile aesthetics */
+    }
+
+    #about div {
+        padding: 1rem 0;
     }
 }
