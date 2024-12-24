@@ -1,5 +1,5 @@
 body {
-    background-image: url('blackhole.jpg');
+    background-image: url('blackhole.png');
     background-size: cover; /* Ensures the image covers the entire screen */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-position: center center; /* Centers the image */
