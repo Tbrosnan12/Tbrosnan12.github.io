@@ -32,8 +32,11 @@ nav a {
 }
 
 section {
-    padding: 2rem;
-    text-align: center;
+    max-width: 600px; /* Limit the width of the text */
+    margin: 0 auto; /* Center the section element */
+    text-align: left; /* Ensure natural reading flow */
+    padding: 1rem;
+    line-height: 1.6; /* Improve readability */
 }
 
 section h2 {
