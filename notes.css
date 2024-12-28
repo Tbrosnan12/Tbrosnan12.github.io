@@ -143,3 +143,28 @@ footer p {
         padding: 1rem 0;
     }
 }
+
+a:link {
+    color: blue; /* Default color for unvisited links */
+}
+
+a:visited {
+    color: rgb(233, 38, 200); /* Color for visited links */
+}
+
+
+header .header-link:link {
+    color: white;
+}
+
+header .header-link:visited {
+    color: lightgray;
+}
+
+header .header-link:hover {
+    color: lightblue;
+}
+
+header .header-link:active {
+    color: darkgray;
+}

@@ -32,9 +32,10 @@ nav a {
 }
 
 section {
-    max-width: 800px; /* Limit the width of the text */
+    max-width: 250px; /* Limit the width of the text */
     margin: 0 auto; /* Center the section element */
     text-align: left; /* Ensure natural reading flow */
+    padding: 1rem;
     line-height: 1.6; /* Improve readability */
 }
 
@@ -71,28 +72,7 @@ footer p {
     margin: 0;
 }
 
-#about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
-    flex-wrap: wrap; /* Ensure it wraps nicely on smaller screens */
-}
 
-#about img {
-    width: 200px;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#about div {
-    max-width: 600px; /* Limit the width of the text */
-    text-align: left; /* Ensure natural reading flow */
-    padding: 1rem;
-    line-height: 1.6; /* Improve readability */
-}
 
 @media (max-width: 768px) {
     body {
@@ -121,8 +101,6 @@ footer p {
         padding: 1rem 0;
     }
 }
-
-
 
 a:link {
     color: blue; /* Default color for unvisited links */
