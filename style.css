@@ -1,5 +1,5 @@
 body {
-    background-image: url('blackhole.png');
+    background-image: url('images/blackhole.png');
     background-size: cover; /* Ensures the image covers the entire screen */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-position: center center; /* Centers the image */
@@ -42,20 +42,6 @@ section h2 {
     margin-top: 0;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #007BFF;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
 
 footer {
     background-color: #333;
@@ -94,6 +80,17 @@ footer p {
     line-height: 1.6; /* Improve readability */
 }
 
+
+#projects h1 {
+    border-bottom: 1px solid #ffffff; /* Adds the underline */
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    font-weight: bold; /* Optional: Make the title bold */
+    margin-bottom: 1rem; /* Optional: Add space below the title */
+
+}
+
+
+
 @media (max-width: 768px) {
     body {
         font-size: 1rem;
@@ -124,52 +121,87 @@ footer p {
 
 /* Image class */
 
+/* Base styles for image-section */
 .image-section {
-    display: flex; /* Enables flexbox layout */
-    align-items: center; /* Vertically aligns items */
-    gap: 2rem; /* Adds space between the image and text */
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Space between image and text */
     padding: 2rem;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .image-section img {
-    width: 170px; /* Adjust image size as needed */
     height: auto; /* Maintain aspect ratio */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
 }
-
 .image-section-right {
     flex-direction: row-reverse; /* Reverse the order so the image appears on the right */
 }
 
 .image-section div {
-    max-width: 600px; /* Limit text container width */
     line-height: 1.6; /* Improve readability */
-    text-align: left; /* Ensure natural reading flow */
+    text-align: left; /* Natural reading flow */
 }
 
+/* Small size (Image 2: Text 1) */
+.image-size-small img {
+    flex: 1; /* Image takes 1 parts */
+    max-width: 200px; /* Adjust max width for smaller size */
+}
+
+.image-size-small div {
+    flex: 2; /* Text takes 2 part */
+    max-width: 600px; /* Limit text width for small layout */
+}
+
+/* Medium size (Default ratios: Image 1: Text 2) */
+.image-size-medium img {
+    flex: 2; /* Image takes 2 part */
+    max-width: 300px;
+}
+
+.image-size-medium div {
+    flex: 1; /* Text takes 1 parts */
+    max-width: 600px;
+}
+
+
+/* Large size (Image 1: Text 3) */
+.image-size-large img {
+    flex: 1; /* Image takes 1 part */
+    max-width: 400px; /* Adjust max width for larger size */
+}
+
+.image-size-large div {
+    flex: 3; /* Text takes 3 parts */
+    max-width: 600px; /* Allow wider text */
+}
+
+/* Responsive Design for smaller screens */
 @media (max-width: 768px) {
     .image-section {
-        flex-direction: column; /* Stacks image and text vertically on small screens */
-        text-align: center; /* Center-align for better mobile aesthetics */
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center; /* Center-align for better display */
     }
 
     .image-section img {
-        margin-bottom: 1rem; /* Add spacing below the image */
+        max-width: 100%; /* Ensure image scales for smaller screens */
+    }
+
+    .image-section div {
+        max-width: 100%; /* Allow text to scale as well */
     }
 }
-
-
 
 
 
 
 a:link {
-    color: blue; /* Default color for unvisited links */
+    color: rgb(0, 195, 255); /* Default color for unvisited links */
 }
 
 a:visited {
-    color: rgb(233, 38, 200); /* Color for visited links */
+    color: rgb(253, 102, 228); /* Color for visited links */
 }
 
 

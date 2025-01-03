@@ -1,5 +1,5 @@
 body {
-    background-image: url('blackhole.png');
+    background-image: url('images/blackhole.png');
     background-size: cover; /* Ensures the image covers the entire screen */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-position: center center; /* Centers the image */
@@ -59,20 +59,7 @@ section h2 {
     margin-top: 0;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #007BFF;
-    text-decoration: none;
-    border-radius: 5px;
-}
 
-.btn:hover {
-    background-color: #0056b3;
-}
 
 footer {
     background-color: #333;
@@ -145,7 +132,7 @@ footer p {
 }
 
 a:link {
-    color: blue; /* Default color for unvisited links */
+    color: rgb(0, 195, 255); /* Default color for unvisited links */
 }
 
 a:visited {
