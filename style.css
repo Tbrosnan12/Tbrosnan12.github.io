@@ -74,7 +74,7 @@ footer p {
 #about {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
     gap: 2rem;
     padding: 2rem;
     flex-wrap: wrap; /* Ensure it wraps nicely on smaller screens */
@@ -121,6 +121,46 @@ footer p {
         padding: 1rem 0;
     }
 }
+
+/* Image class */
+
+.image-section {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Vertically aligns items */
+    gap: 2rem; /* Adds space between the image and text */
+    padding: 2rem;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.image-section img {
+    width: 170px; /* Adjust image size as needed */
+    height: auto; /* Maintain aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+.image-section-right {
+    flex-direction: row-reverse; /* Reverse the order so the image appears on the right */
+}
+
+.image-section div {
+    max-width: 600px; /* Limit text container width */
+    line-height: 1.6; /* Improve readability */
+    text-align: left; /* Ensure natural reading flow */
+}
+
+@media (max-width: 768px) {
+    .image-section {
+        flex-direction: column; /* Stacks image and text vertically on small screens */
+        text-align: center; /* Center-align for better mobile aesthetics */
+    }
+
+    .image-section img {
+        margin-bottom: 1rem; /* Add spacing below the image */
+    }
+}
+
+
+
 
 
 
