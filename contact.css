@@ -126,3 +126,7 @@ header .header-link:hover {
 header .header-link:active {
     color: darkgray;
 }
+header .header-link.current {
+color: lightblue;
+}
+
