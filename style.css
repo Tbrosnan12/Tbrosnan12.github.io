@@ -81,7 +81,7 @@ footer p {
 }
 
 
-#projects h1 {
+#interests h1 {
     border-bottom: 1px solid #ffffff; /* Adds the underline */
     font-size: 2.5rem; /* Adjust the font size as needed */
     font-weight: bold; /* Optional: Make the title bold */
@@ -224,3 +224,36 @@ header .header-link.current {
 color: lightblue;
 }
 
+
+
+ /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+
+.col-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+figcaption {
+  text-align: center;
+}
+
+figure {
+  display: block;
+  margin-left: 0px;
+  margin-right: 0px;
+}
